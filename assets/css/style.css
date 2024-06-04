@@ -5,11 +5,15 @@
 /* VARIABLES */
 :root {
     --c-dark: #212529;
-    /* --c-brand: #4e57d4; */
-    /* --c-brand: #6c73d6; */
-    --c-brand: #8b00be;
-    --c-brand-light: #8e00e0;
-    --c-brand-rgb: 78, 87, 212;
+    /* --c-brand: #8b00be; */
+    /* --c-brand: #ffc31d; */
+    --c-brand: #0693e3;
+    /* --c-brand-light: rgba(234, 215, 4, 0.437); */
+    --c-brand-light: #0479b8e4;
+    --c-brand-rgb: 3, 4, 15;
+
+    /* --c-brand-rgb: rgb(3, 4, 15); */
+    /* --c-brand-rgb: rgba(0, 0, 0, 0.263); */
     --c-body: #727272;
     --font-base: "Poppins", sans-serif;
     --box-shadow: 0px 15px 25px rgba(0,0,0,0.08);
@@ -89,11 +93,11 @@ img {
 
  /* Custom CSS for navbar links */
  .navbar-nav .nav-link {
-     color: white;
+     color: rgb(0, 0, 0);
      transition: color 0.3s ease;
  }
  .navbar-nav .nav-link:hover {
-     color: #f8f9fa;
+     color: #083b6e;
  }
 
 
@@ -107,7 +111,7 @@ img {
 
 .logo{
     display: flex;
-    justify-content: center;
+    justify-content: start;
     align-items: center;
     gap:1rem;
 }
@@ -121,11 +125,12 @@ img {
 
 /* BTN */
 .btn {
-    ont-weight: 600;
+    font-weight: 600;
     font-size: 14px;
     text-transform: uppercase;
     border-radius: 0;
     padding: 10px 24px;
+    
 }
 
 .btn-brand {
@@ -138,12 +143,13 @@ img {
     background-color: var(--c-brand-light);
     border-color: var(--c-brand-light);
     color: white;
+    /* padding-inline: 0px; */
 }
 
 
 /* HERO */
 #hero {
-    background: linear-gradient(rgba(var(--c-brand-rgb), 0.7), rgba(var(--c-brand-rgb), 0.438)), url(../images/backgrounds/ustp.jpg);
+    background: linear-gradient(rgba(var(--c-brand-rgb), 0.7), rgba(var(--c-brand-rgb), 0.438)), url(../images/backgrounds/bg-solve.jpg);
     background-position: center;
     background-size: cover;
 }
@@ -157,7 +163,8 @@ img {
 
 .typedText {
     text-transform: capitalize;
-    color: rgb(0, 0, 0);
+    /* color: rgb(234, 215, 4); */
+    color: #ffc31d;
 }
 
 
@@ -229,9 +236,9 @@ img {
     color: white;
 }
 
-/* COUNTER */
-#counter {
-    background: linear-gradient(rgba(var(--c-brand-rgb), 0.3), rgba(var(--c-brand-rgb), 0.8)), url(../images/backgrounds/campus.jpg);
+/* RESOURCES */
+#resources {
+    background: linear-gradient(rgba(var(--c-brand-rgb), 0.3), rgba(var(--c-brand-rgb), 0.8)), url(../images/backgrounds/bg-solve3.jpg);
     background-position: center;
     background-size: cover;
 }
@@ -301,7 +308,7 @@ img {
     content: "";
     width: 100%;
     height: 70%;
-    background: linear-gradient(rgba(var(--c-brand-rgb), 0.3), rgba(var(--c-brand-rgb), 0.8)), url(../images/backgrounds/ustp.jpg);
+    background: linear-gradient(rgba(var(--c-brand-rgb), 0.3), rgba(var(--c-brand-rgb), 0.8)), url(../images/backgrounds/bg-contact.jpg);
     background-position: center;
     background-size: cover;
     position: absolute;

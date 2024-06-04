@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Pricing Plans</title>
+  <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+  <style>
+    .pricing-card {
+      border: 1px solid #e1e1e1;
+      border-radius: 10px;
+      padding: 20px;
+      margin: 20px;
+      text-align: center;
+    }
+    .pricing-card .most-popular {
+      background-color: #f3f4f6;
+      color: #6c63ff;
+      padding: 5px 10px;
+      font-weight: bold;
+      position: absolute;
+      top: -10px;
+      left: 50%;
+      transform: translateX(-50%);
+      border-radius: 5px;
+    }
+    .pricing-card h3 {
+      margin: 20px 0;
+    }
+    .pricing-card .price {
+      font-size: 36px;
+      font-weight: bold;
+    }
+    .pricing-card .original-price {
+      text-decoration: line-through;
+      color: #999;
+    }
+    .pricing-card .save {
+      color: #28a745;
+      font-weight: bold;
+    }
+    .pricing-card ul {
+      list-style: none;
+      padding: 0;
+    }
+    .pricing-card ul li {
+      padding: 10px 0;
+    }
+    .pricing-card .btn {
+      margin-top: 20px;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <h1 class="text-center my-5">Pick Your Perfect Plan</h1>
+    <div class="row justify-content-center">
+      <!-- Premium Plan -->
+      <div class="col-md-4">
+        <div class="pricing-card">
+          <h3>Premium</h3>
+          <div class="original-price">₱409.00</div>
+          <div class="save">SAVE 73%</div>
+          <div class="price">₱109.00/mo</div>
+          <div>+3 months FREE</div>
+          <button class="btn btn-primary btn-block mt-3">Choose Plan</button>
+          <div class="mt-3">₱169.00/mo when you renew</div>
+          <ul class="mt-4">
+            <li>✔️ 100 Websites</li>
+            <li>✔️ Managed WordPress</li>
+          </ul>
+        </div>
+      </div>
+      <!-- Business Plan -->
+      <div class="col-md-4">
+        <div class="pricing-card">
+          <div class="most-popular">MOST POPULAR</div>
+          <h3>Business</h3>
+          <div class="original-price">₱479.00</div>
+          <div class="save">SAVE 65%</div>
+          <div class="price">₱169.00/mo</div>
+          <div>+3 months FREE</div>
+          <button class="btn btn-primary btn-block mt-3">Choose Plan</button>
+          <div class="mt-3">₱339.00/mo when you renew</div>
+          <ul class="mt-4">
+            <li>✔️ 100 Websites</li>
+            <li>✔️ Managed WordPress</li>
+          </ul>
+        </div>
+      </div>
+      <!-- Cloud Startup Plan -->
+      <div class="col-md-4">
+        <div class="pricing-card">
+          <h3>Cloud Startup</h3>
+          <div class="original-price">₱1,129.00</div>
+          <div class="save">SAVE 56%</div>
+          <div class="price">₱499.00/mo</div>
+          <div>+3 months FREE</div>
+          <button class="btn btn-primary btn-block mt-3">Choose Plan</button>
+          <div class="mt-3">₱849.00/mo when you renew</div>
+          <ul class="mt-4">
+            <li>✔️ 300 Websites</li>
+            <li>✔️ Managed WordPress</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+</html>

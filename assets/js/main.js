@@ -12,7 +12,7 @@ AOS.init({
 });
 
 var typingEffect = new Typed(".typedText", {
-  strings: ["DESIGN", "DEVELOP", "MANAGE"],
+  strings: ["EFFICIENT", "RELIABLE", "OVERFLOWING"],
   loop: true,
   typeSpeed: 100,
   backSpeed: 80,
