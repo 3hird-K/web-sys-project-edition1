@@ -236,6 +236,8 @@ img {
     color: white;
 }
 
+
+
 /* RESOURCES */
 #resources {
     background: linear-gradient(rgba(var(--c-brand-rgb), 0.3), rgba(var(--c-brand-rgb), 0.8)), url(../images/backgrounds/bg-solve3.jpg);
@@ -281,6 +283,13 @@ img {
 }
 
 /* TEAM */
+
+.team-w-size{
+    height: 25rem;
+    aspect-ratio: 1/1;
+    object-fit: cover;
+    /* border-radius: 50%; */
+}
 .team-member-content {
     background-color: var(--c-brand);
     position: absolute;
