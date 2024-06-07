@@ -22,7 +22,34 @@
             vertical-align: middle;
             max-width: 100%;
             height: auto;
+            object-fit: cover;
         }
+        /* services custom css */
+
+        .service-box {
+            display: flex;
+            flex-direction: column;
+            justify-content: stretch;
+        }
+
+        .service {
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            height: 100%;
+            box-sizing: border-box;
+        }
+
+
+
+        .line {
+            width: 50px;
+            height: 5px;
+            background: #000;
+            margin: 10px auto;
+        }
+        
+
 
         
     </style>
@@ -213,7 +240,7 @@
 
     <!-- TEAM -->
     <section id="about" class="section-padding">
-        <div class="container">
+        <div class="container-lg">
             <div class="row">
                 <div class="col-12 text-center" data-aos="fade-down" data-aos-delay="150">
                     <div class="section-title">
@@ -223,11 +250,84 @@
                     </div>
                 </div>
             </div>
-            <div class="row g-4 text-center">
-                <div class="col-md-4" data-aos="fade-down" data-aos-delay="150">
+
+            <div class="row  row-cols-1 row-cols-sm-2 row-cols-lg-5 g-2 g-lg-3 align-items-center g-4 text-center">
+                <div class="col" data-aos="fade-down" data-aos-delay="150">
                     <div class="team-member image-zoom">
                         <div class="image-zoom-wrapper">
-                            <img src="./assets/images/team/Reygee.jpg" alt="" class="team-w-size">
+                            <img src="./assets/images/team/Reygee.jpg" alt="" class="team-w-size rounded-2">
+                        </div>
+                        <div class="team-member-content">
+                            <h4 class="text-white">Reygee Rojo</h4>
+                            
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="col" data-aos="fade-down" data-aos-delay="250">
+                    <div class="team-member image-zoom">
+                        <div class="image-zoom-wrapper">
+                            <img src="./assets/images/team/Rogelene.jpg" alt="" class="team-w-size rounded-2">
+                        </div>
+                        <div class="team-member-content">
+                            <h4 class="text-white">Rogelene Amper</h4>
+                            
+                        </div>
+                    </div>
+                </div>
+                <div class="col" data-aos="fade-down" data-aos-delay="350">
+                    <div class="team-member image-zoom h-100">
+                        <div class="image-zoom-wrapper">
+                            <img src="./assets/images/team/Queences.jpg" alt="" class="team-w-size rounded-2">
+                        </div>
+                        <div class="team-member-content">
+                            <h4 class="text-white">Queences Chemen Qutar</h4>
+                            
+                        </div>
+                    </div>
+                </div>
+                <div class="col" data-aos="fade-down" data-aos-delay="350">
+                    <div class="team-member image-zoom">
+                        <div class="image-zoom-wrapper">
+                            <img src="./assets/images/team/angela.jpg" alt="" class="team-w-size rounded-2">
+                        </div>
+                        <div class="team-member-content">
+                            <h4 class="text-white">Angela Eunice Baran</h4>
+                            
+                        </div>
+                    </div>
+                </div>
+                <div class="col" data-aos="fade-down" data-aos-delay="350">
+                    <div class="team-member image-zoom">
+                        <div class="image-zoom-wrapper">
+                            <img src="./assets/images/team/Jynna.jpg" alt="" class="team-w-size rounded-2">
+                        </div>
+                        <div class="team-member-content">
+                            <h4 class="text-white">Jynna Jynn Sta. Rita</h4>
+                            
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- <section id="about" class="section-padding">
+        <div class="container-lg">
+            <div class="row">
+                <div class="col-12 text-center" data-aos="fade-down" data-aos-delay="150">
+                    <div class="section-title">
+                        <h1 class="display-4 fw-semibold">Meet the Team</h1>
+                        <div class="line"></div>
+                        <p>We develop and implement designs.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="row g-4 justify-content-center text-center">
+                <div class="col-md-3" data-aos="fade-down" data-aos-delay="150">
+                    <div class="team-member image-zoom">
+                        <div class="image-zoom-wrapper">
+                            <img src="./assets/images/team/Reygee.jpg" alt="" class="team-w-size rounded-2">
                         </div>
                         <div class="team-member-content">
                             <h4 class="text-white">Reygee Rojo</h4>
@@ -235,10 +335,10 @@
                         </div>
                     </div>
                 </div>
-                <div class="col-md-4" data-aos="fade-down" data-aos-delay="250">
+                <div class="col-md-3" data-aos="fade-down" data-aos-delay="250">
                     <div class="team-member image-zoom">
                         <div class="image-zoom-wrapper">
-                            <img src="./assets/images/team/Rogelene.jpg" alt="" class="team-w-size">
+                            <img src="./assets/images/team/Rogelene.jpg" alt="" class="team-w-size rounded-2">
                         </div>
                         <div class="team-member-content">
                             <h4 class="text-white">Rogelene Amper</h4>
@@ -246,10 +346,10 @@
                         </div>
                     </div>
                 </div>
-                <div class="col-md-4" data-aos="fade-down" data-aos-delay="350">
-                    <div class="team-member image-zoom h-100">
+                <div class="col-md-3" data-aos="fade-down" data-aos-delay="350">
+                    <div class="team-member image-zoom">
                         <div class="image-zoom-wrapper">
-                            <img src="./assets/images/team/Queences.jpg" alt="" class="team-w-size">
+                            <img src="./assets/images/team/Queences.jpg" alt="" class="team-w-size rounded-2">
                         </div>
                         <div class="team-member-content">
                             <h4 class="text-white">Queences Chemen Qutar</h4>
@@ -257,10 +357,10 @@
                         </div>
                     </div>
                 </div>
-                <div class="col-md-4" data-aos="fade-down" data-aos-delay="350">
+                <div class="col-md-3" data-aos="fade-down" data-aos-delay="450">
                     <div class="team-member image-zoom">
                         <div class="image-zoom-wrapper">
-                            <img src="./assets/images/team/angela.jpg" alt="" class="team-w-size">
+                            <img src="./assets/images/team/angela.jpg" alt="" class="team-w-size rounded-2">
                         </div>
                         <div class="team-member-content">
                             <h4 class="text-white">Angela Eunice Baran</h4>
@@ -268,10 +368,10 @@
                         </div>
                     </div>
                 </div>
-                <div class="col-md-4" data-aos="fade-down" data-aos-delay="350">
+                <div class="col-md-3" data-aos="fade-down" data-aos-delay="550">
                     <div class="team-member image-zoom">
                         <div class="image-zoom-wrapper">
-                            <img src="./assets/images/team/Jynna.jpg" alt="" class="team-w-size">
+                            <img src="./assets/images/team/Jynna.jpg" alt="" class="team-w-size rounded-2">
                         </div>
                         <div class="team-member-content">
                             <h4 class="text-white">Jynna Jynn Sta. Rita</h4>
@@ -281,11 +381,70 @@
                 </div>
             </div>
         </div>
-    </section>
+    </section> -->
+
+ 
+
+    
 
 
     <!-- SERVICES -->
     <section id="services" class="section-padding border-top">
+        <div class="container">
+            <div class="row">
+                <div class="col-12 text-center" data-aos="fade-down" data-aos-delay="150">
+                    <div class="section-title">
+                        <h1 class="display-4 fw-semibold">Our Services</h1>
+                        <div class="line"></div>
+                        <p>Overflow Virtual Services is dedicated to providing exceptional virtual support services allowing you to focus on your core business operations.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="row row-cols-1 row-cols-md-2  g-2 g-lg-3 text-center">
+                <div class="col service-box" data-aos="fade-down" data-aos-delay="150">
+                    <div class="service theme-shadow p-lg-5 p-4">
+                        <div class="iconbox">
+                            <i class="ri-book-open-fill"></i>
+                        </div>
+                        <h5 class="mt-4 mb-3">Monthly Bookkeeping</h5>
+                        <p>Covers everything from basic to advanced financial tasks, including Financial Reporting, Bank Reconciliations, Accounts Payable, Invoicing, Sales Tax Reporting, and more, ensuring your financial records are accurate and up-to-date.</p>
+                         
+                    </div>
+                </div>
+                <div class="col service-box" data-aos="fade-down" data-aos-delay="200">
+                    <div class="service theme-shadow p-lg-5 p-4">
+                        <div class="iconbox">
+                            <i class="ri-calendar-check-fill"></i>
+                        </div>
+                        <h5 class="mt-4 mb-3">Task Management</h5>
+                        <p>Efficiently organize and manage your daily tasks with our comprehensive task management services, ensuring timely completion and optimal productivity.</p>
+                    </div>
+                </div>
+                <div class="col service-box" data-aos="fade-down" data-aos-delay="250">
+                    <div class="service theme-shadow p-lg-5 p-4">
+                        <div class="iconbox">
+                            <i class="ri-bank-line"></i>
+                        </div>
+                        <h5 class="mt-4 mb-3">Bookkeeping Advisory</h5>
+                        <p>Provides expert guidance and insights to help you make informed financial decisions and optimize your bookkeeping processes.</p>
+                    </div>
+                </div>
+                <div class="col service-box" data-aos="fade-down" data-aos-delay="250">
+                    <div class="service theme-shadow p-lg-5 p-4">
+                        <div class="iconbox">
+                            <i class="ri-history-line"></i>
+                        </div>
+                        <h5 class="mt-4 mb-3">Back Bookkeeping</h5>
+                        <p>Helps you catch up on your overdue financial tasks, ensuring that your records are complete and accurate.</p>
+                    </div>
+                </div>
+                
+            </div>
+        </div>
+        
+</section>
+
+    <!-- <section id="services" class="section-padding border-top">
     <div class="container">
         <div class="row">
             <div class="col-12 text-center" data-aos="fade-down" data-aos-delay="150">
@@ -296,8 +455,8 @@
                 </div>
             </div>
         </div>
-        <div class="row g-4 text-center">
-            <div class="col-lg-3 col-md-6 flex-grow-1" data-aos="fade-down" data-aos-delay="150">
+        <div class="row  row-cols-1 row-cols-md-2  g-2 g-lg-3 text-center">
+            <div class="col col-md-6 service-box" data-aos="fade-down" data-aos-delay="150">
                 <div class="service theme-shadow p-lg-5 p-4">
                     <div class="iconbox">
                         <i class="ri-book-open-fill"></i>
@@ -306,25 +465,7 @@
                     <p>Covers everything from basic to advanced financial tasks, including Financial Reporting, Bank Reconciliations, Accounts Payable, Invoicing, Sales Tax Reporting, and more, ensuring your financial records are accurate and up-to-date.</p>
                 </div>
             </div>
-            <div class="col-lg-3 col-md-6 flex-grow-1" data-aos="fade-down" data-aos-delay="250">
-                <div class="service theme-shadow p-lg-5 p-4">
-                    <div class="iconbox">
-                        <i class="ri-stack-fill"></i>
-                    </div>
-                    <h5 class="mt-4 mb-3">Back Bookkeeping</h5>
-                    <p>Helps you catch up on your overdue financial tasks, ensuring that your records are complete and accurate.</p>
-                </div>
-            </div>
-            <div class="col-lg-3 col-md-6 flex-grow-2" data-aos="fade-down" data-aos-delay="350">
-                <div class="service theme-shadow p-lg-5 p-4">
-                    <div class="iconbox">
-                        <i class="ri-ruler-2-fill"></i>
-                    </div>
-                    <h5 class="mt-4 mb-3">Bookkeeping Advisory</h5>
-                    <p>Provides expert guidance and insights to help you make informed financial decisions and optimize your bookkeeping processes.</p>
-                </div>
-            </div>
-            <div class="col-lg-3 col-md-6 flex-grow-1" data-aos="fade-down" data-aos-delay="450">
+            <div class="col col-md-6 service-box" data-aos="fade-down" data-aos-delay="450">
                 <div class="service theme-shadow p-lg-5 p-4">
                     <div class="iconbox">
                         <i class="ri-admin-fill"></i>
@@ -333,10 +474,29 @@
                     <p>Provides comprehensive support to help you manage your day-to-day administrative tasks efficiently, allowing you to focus on your core business operations. </p>
                 </div>
             </div>
+            <div class="col col-md-6 service-box" data-aos="fade-down" data-aos-delay="250">
+                <div class="service theme-shadow p-lg-5 p-4">
+                    <div class="iconbox">
+                        <i class="ri-stack-fill"></i>
+                    </div>
+                    <h5 class="mt-4 mb-3">Back Bookkeeping</h5>
+                    <p>Helps you catch up on your overdue financial tasks, ensuring that your records are complete and accurate.</p>
+                </div>
+            </div>
+            <div class="col col-md-6 service-box" data-aos="fade-down" data-aos-delay="350">
+                <div class="service theme-shadow p-lg-5 p-4">
+                    <div class="iconbox">
+                        <i class="ri-ruler-2-fill"></i>
+                    </div>
+                    <h5 class="mt-4 mb-3">Bookkeeping Advisory</h5>
+                    <p>Provides expert guidance and insights to help you make informed financial decisions and optimize your bookkeeping processes.</p>
+                </div>
+            </div>
+            
             
         </div>
     </div>
-</section>
+</section> -->
  <!-- CONTACT -->
  <section class="section-padding bg-light" id="contact">
     <div class="container">
@@ -378,52 +538,55 @@
 
 
     <!-- RESOURCES -->
-    <section id="resources" class="section-padding">
-        <div class="container text-center">
-            <div class="row g-4  align-items-center">
-
-                    <div class="col-lg-2 col-sm-6" data-aos="fade-down" data-aos-delay="150">
-                        <a href="https://prisms.ustp.edu.ph/padmission" target="_blank">
-                            <img src="./assets/images/logos/qbo.png" alt="USTep LOGO" class="mb-3 w-25">
-                        </a>
-                        <p class="text-white">QuickBooks Online</p>
-                    </div>
-                    <div class="col-lg-2 col-sm-6" data-aos="fade-down" data-aos-delay="250">
-                        <a href="https://www.xero.com/ph/" target="_blank">
-                            <img src="./assets/images/logos/xero.png" alt="USTep LOGO" class="mb-3 h-25 w-25">
-                        </a>
-                        <p class="text-white font-weight-light">Xero<p>
-                    </div>
-                    <div class="col-lg-2 col-sm-6" data-aos="fade-down" data-aos-delay="250">
-                        <a href="https://craftable.com/" target="_blank">
-                            <img src="./assets/images/logos/craftable.png" alt="USTep LOGO" class="mb-4 h-25 w-25">
-                        </a>
-                        <p class="text-white font-weight-light">Craftable<p>
-                    </div>
-                    <div class="col-lg-2 col-sm-6" data-aos="fade-down" data-aos-delay="250">
-                        <a href="https://www.bill.com/" target="_blank">
-                            <img src="https://cdn.prod.website-files.com/63e3da3df35cd62f54751985/649488c838360d22ac08b864_bill-logo.svg" alt="USTep LOGO" class="mb-3 h-25 w-25">
-                        </a>
-                        <p class="text-white font-weight-light">Bill.com<p>
-                    </div>
-                    <div class="col-lg-2 col-sm-6" data-aos="fade-down" data-aos-delay="350">
-                        <a href="https://gusto.com/" target="_blank">
-                            <img src="https://prod.gusto-assets.com/assets/svg/header/gusto-logo-bfed4fde4bd2b5dd364ab0e58f77fc90aeefa2f1ecdb7fff524279642e23f9c2.svg" alt="USTep LOGO" class="mb-3 h-50 w-50">
-                        </a>
-                        <p class="text-white">gusto</p>
-                    </div>
-                    <div class="col-lg-2 col-sm-6" data-aos="fade-down" data-aos-delay="450">
-                        <a href="https://www.lastpass.com/" target="_blank">
-                            <img src="./assets/images/logos/lastpass.png" alt="USTep LOGO" class="mb-3">
-                        </a>
-                        <p class="text-white">LastPass</p>
-                    </div>
+    <section id="resources" class="section-padding ">
+        <div class="container text-center ">
+            <div class="row g-4  align-items-center logos-slide">
                 
-                
-                
+                <div class=" d-flex">
+                        <div class="col-lg-2 col-sm-6" data-aos="fade-down" data-aos-delay="150">
+                            <a href="https://prisms.ustp.edu.ph/padmission" target="_blank">
+                                <img src="./assets/images/logos/qbo.png" alt="USTep LOGO" class="mb-3 w-25">
+                            </a>
+                            <p class="text-white">QuickBooks Online</p>
+                        </div>
+                        <div class="col-lg-2 col-sm-6" data-aos="fade-down" data-aos-delay="250">
+                            <a href="https://www.xero.com/ph/" target="_blank">
+                                <img src="./assets/images/logos/xero.png" alt="USTep LOGO" class="mb-3 h-25 w-25">
+                            </a>
+                            <p class="text-white font-weight-light">Xero<p>
+                        </div>
+                        <div class="col-lg-2 col-sm-6" data-aos="fade-down" data-aos-delay="250">
+                            <a href="https://craftable.com/" target="_blank">
+                                <img src="./assets/images/logos/craftable.png" alt="USTep LOGO" class="mb-4 h-25 w-25">
+                            </a>
+                            <p class="text-white font-weight-light">Craftable<p>
+                        </div>
+                        <div class="col-lg-2 col-sm-6" data-aos="fade-down" data-aos-delay="250">
+                            <a href="https://www.bill.com/" target="_blank">
+                                <img src="https://cdn.prod.website-files.com/63e3da3df35cd62f54751985/649488c838360d22ac08b864_bill-logo.svg" alt="USTep LOGO" class="mb-3 h-25 w-25">
+                            </a>
+                            <p class="text-white font-weight-light">Bill.com<p>
+                        </div>
+                        <div class="col-lg-2 col-sm-6" data-aos="fade-down" data-aos-delay="350">
+                            <a href="https://gusto.com/" target="_blank">
+                                <img src="https://prod.gusto-assets.com/assets/svg/header/gusto-logo-bfed4fde4bd2b5dd364ab0e58f77fc90aeefa2f1ecdb7fff524279642e23f9c2.svg" alt="USTep LOGO" class="mb-3 h-50 w-50">
+                            </a>
+                            <p class="text-white">gusto</p>
+                        </div>
+                        <div class="col-lg-2 col-sm-6" data-aos="fade-down" data-aos-delay="450">
+                            <a href="https://www.lastpass.com/" target="_blank">
+                                <img src="./assets/images/logos/lastpass.png" alt="USTep LOGO" class="mb-3">
+                            </a>
+                            <p class="text-white">LastPass</p>
+                        </div>
+                    </div>
+                </div>
+                    
             </div>
         </div>
     </section>
+
+    
 
     <!-- PORTFOLIO -->
     <!-- <section id="portfolio" class="section-padding">

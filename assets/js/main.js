@@ -22,3 +22,8 @@ var typingEffect = new Typed(".typedText", {
 var scrollSpy = new bootstrap.ScrollSpy(document.body, {
   target: '#navbar'
 });
+
+
+// marquee resources
+var logosCopy = document.querySelector(".logos").cloneNode(true);
+document.querySelector(".container").appendChild(logosCopy);
